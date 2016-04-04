@@ -1,0 +1,115 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html{
+    height: 100%;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    background: white;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #333333;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+a{
+    background: transparent;
+}
+
+ul {
+    padding: 0;
+    display: block;
+}
+
+ul li{
+    line-height: 1.5em;
+}
+
+    nav {
+        background-color: #a5c4bc;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    nav .nav-display {
+        border-bottom: none;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 20px;
+    }
+
+    nav .nav-display li{
+        font-size: 0.9em;
+        list-style: none;
+        margin-bottom: 0;
+    }
+
+    nav .nav-display li a{
+        border-radius: 5px;
+        color: #ffffff;
+        font-weight: 700;
+        margin-right: 15px;
+        padding: 10px 20px 10px;
+        text-decoration: none;
+    }
+
+    nav .nav-display li a:hover{
+        background-color: #84ae84;
+        text-decoration: none;
+    }
+
+    nav .nav-display li a.active{
+        background-color: #84ae84;
+    }
+
+    .media{
+        position: relative;
+        min-width: 1000px;
+        width: 100%;
+        height: 380px;
+        overflow: hidden;
+    }
+
+    .media-video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .media h1{
+        position: absolute;
+        width: 100%;font-weight: lighter;
+        font-size: 24px;
+        text-align: center;
+        height: 80px;
+        top: 0;
+        bottom: 0;
+        color: #ffffff;
+        opacity: 0.7;
+        margin: auto;
+        letter-spacing: 5px;
+        font-family: 微软雅黑, HelveticaNeue-Thin, sans-serif;
+    }
+
+    .media h1 span:nth-child(3){
+        display: block;
+        font-size: 18px;
+        letter-spacing: 5px;
+        color: rgb(87, 173, 104);
+        margin-top: 20px;
+    }
