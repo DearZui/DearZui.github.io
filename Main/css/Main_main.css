@@ -48,9 +48,9 @@ a{
 
 h2{
     font-size: 1.1em;
-    font-weight: 900;
+    font-weight: 600;
     line-height: 1.5;
-    margin: 0 0 2em 0;
+    margin: 2em 0 2em 0;
     text-transform: uppercase;
     letter-spacing: 0.35em;
 }
@@ -273,4 +273,55 @@ ul li{
         display: inline-block;
         padding: 0 1em 0 0;
         vertical-align: middle;
+    }
+
+    ul.icons{
+        cursor: default;
+        list-style: none;
+        padding-left: 0;
+        margin: -1em 0 2em -1em;
+    }
+
+    ul.icons li{
+        display: inline-block;
+        padding: 1em 0 0 1em;
+    }
+
+    .icon{
+        text-decoration: none;
+        position: relative;
+    }
+
+    .icon.style2{
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        background-color: transparent;
+        border: solid 1px #c9c9c9;
+        border-radius: 4px;
+        width: 2.65em;
+        height: 2.65em;
+        display: inline-block;
+        text-align: center;
+        line-height: 2.65em;
+        color: inherit;
+    }
+
+    .icon:before{
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none !important;
+    }
+
+.icon.style2:hover {
+    color: #a5c4bc;
+    border-color: #a5c4bc;
+}
+
+    .icon.style2:before{
+        font-size: 1.1em;
+    }
+
+    .icon > .label{
+        display: none;
     }
