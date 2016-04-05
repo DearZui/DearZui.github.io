@@ -64,6 +64,13 @@ ul li{
     line-height: 1.5em;
 }
 
+mark{
+    background-color: #a5c4bc;
+    border-radius: 4px;
+    padding: 0px 5px;
+    display: none;
+}
+
     nav {
         background-color: #a5c4bc;
         box-sizing: border-box;
@@ -311,6 +318,25 @@ ul li{
         font-style: normal;
         font-weight: normal;
         text-decoration: none !important;
+    }
+
+    .icons li .wechat-qrcode{
+        display: none;
+        height: 170px;
+        width: 150px;
+        position: absolute;
+        bottom: 220px;
+        z-index: -1;
+    }
+
+    .wechat-qrcode img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .vis{
+        position: absolute;
+        bottom: 20px;
     }
 
 .icon.style2:hover {

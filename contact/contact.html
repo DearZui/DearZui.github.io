@@ -44,17 +44,60 @@
         <section>
             <h2>Follow</h2>
             <ul class="icons">
-                <li><a href="javascript:;" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="javascript:;" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="javascript:;" class="icon style2 fa-wechat"><span class="label">WeChat</span></a></li>
-                <li><a href="javascript:;" class="icon style2 fa-weibo"><span class="label">Weibo</span></a></li>
-                <li><a href="javascript:;" class="icon style2 fa-github"><span class="label">Github</span></a></li>
-                <li><a href="javascript:;" class="icon style2 fa-soccer-ball-o"><span class="label">Hupu</span></a></li><br>
-                <li><a href="javascript:;" class="icon style2 fa-qq"><span class="label">QQ</span></a></li>
-                <li><a href="javascript:;" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
-                <li><a href="javascript:;" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="https://twitter.com/loebmraz" target="_blank" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="javascript:;" target="_blank" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+                <li>
+                    <div class="wechat-qrcode">
+                        <img src="../images/WeChat.jpg" alt="qrcode">
+                        <a>ID: damn_world</a>
+                    </div>
+                    <a href="javascript:;" class="icon style2 fa-wechat"><span class="label">WeChat</span></a>
+                </li>
+                <li><a href="http://weibo.com/u/1785011500/home" target="_blank" class="icon style2 fa-weibo"><span class="label">Weibo</span></a></li>
+                <li><a href="https://github.com/DearZui" target="_blank" class="icon style2 fa-github"><span class="label">Github</span></a></li>
+                <li><a href="http://my.hupu.com/17012448" target="_blank" class="icon style2 fa-soccer-ball-o"><span class="label">Hupu</span></a></li><br>
+                <li>
+                    <a href="javascript:;" class="icon style2 fa-qq"><span class="label">QQ</span></a>
+                    <mark class="vis qq">673008724</mark>
+                </li>
+                <li>
+                    <a href="javascript:;" class="icon style2 fa-phone"><span class="label">Phone</span></a>
+                    <mark class="vis phone">+86 1865138939</mark>
+                </li>
+                <li>
+                    <a href="javascript:;" class="icon style2 fa-envelope"><span class="label">Email</span></a>
+                    <mark class="vis email">673008724@163.com</mark>
+                </li>
             </ul>
         </section>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            var wechat = $(".fa-wechat"), qq = $(".fa-qq"), phone = $(".fa-phone"), email = $(".fa-envelope");
+            var wechat_pic = $(".wechat-qrcode"), qq_num = $(".qq"), phone_num = $(".phone"), email_add = $(".email");
+            var vis = $(".vis");
+            var wechat_li = $(".icons li:eq(2)")
+            wechat.mouseover(function () {
+                wechat_pic.css("display", "block");
+            });
+            qq.mouseover(function () {
+                vis.css("display", "none");
+                qq_num.css("display", "inline");
+            });
+            phone.mouseover(function () {
+                vis.css("display", "none");
+                phone_num.css("display", "inline");
+            });
+            email.mouseover(function () {
+                vis.css("display", "none");
+                email_add.css("display", "inline");
+            });
+            $(document).click(function () {
+                wechat_pic.css("display", "none");
+                vis.css("display", "none");
+            });
+        })
+    </script>
 </body>
 </html>
