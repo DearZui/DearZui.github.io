@@ -1,6 +1,20 @@
 /**
  * Created by PC on 2016/4/8.
  */
+var hld = new Array(
+    "0101 元旦",
+    "0214 情人节",
+    "0308 妇女节",
+    "0312 植树节",
+    "0315 消费者权益日",
+    "0401 愚人节",
+    "0501 劳动节",
+    "0601 儿童节",
+    "0910 教师节",
+    "1001 国庆节",
+    "1224 平安夜",
+    "1225 圣诞节");
+    var solarTerm = new Array('0105小寒','0120大寒','0203立春','0218雨水','0305惊蜇','0320春分','0404清明','0419谷雨','0505立夏','0520小满','0605芒种','0621夏至','0706小暑','0722大暑','0807立秋','0822处暑','0907白露','0922秋分','1008寒露','1023霜降','1107立冬','1122小雪','1206大雪','1221冬至');
 window.onload = function() {
     var d = new Date();
     month_name = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -86,6 +100,10 @@ function get_calendar(day_no, days){
     for(; c <= 6; c++){
         var td = document.createElement('td');
         td.innerHTML = count;
+        var month_index = document.getElementById("calendar-month").selectedIndex;
+        var month_selected = parseInt(document.getElementById("calendar-month").options[month_index].value);
+        setHoliday(month_selected+1,count,td);
+        setSolar(month_selected+1,count,td);
         count++;
         tr.appendChild(td);
     }
@@ -101,10 +119,35 @@ function get_calendar(day_no, days){
             }
             var td = document.createElement('td');
             td.innerHTML = count;
+            var month_index = document.getElementById("calendar-month").selectedIndex;
+            var month_selected = parseInt(document.getElementById("calendar-month").options[month_index].value);
+            setHoliday(month_selected+1,count,td);
+            setSolar(month_selected+1,count,td);
             count++;
             tr.appendChild(td);
         }
         table.appendChild(tr);
     }
     return table;
+}
+
+function setHoliday(month,day,td){
+    for(var i = 0; i < hld.length; i++){
+        if(parseInt(hld[i].substr(0,2)) == month){
+            if(parseInt(hld[i].substr(2,4)) == day){
+                td.innerHTML += "<br/>" + hld[i].substr(5);
+            }
+        }
+    }
+}
+
+
+function setSolar(m,d,td){
+    for(var i = 0; i < solarTerm.length; i++){
+        if(parseInt(solarTerm[i].substr(0,2)) == m){
+            if(parseInt(solarTerm[i].substr(2,4)) == d){
+                td.innerHTML += "<br/>" + solarTerm[i].substr(4);
+            }
+        }
+    }
 }
