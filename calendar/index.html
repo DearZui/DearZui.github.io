@@ -9,7 +9,8 @@
 <body>
     <div id="calendar-container">
         <div id="calendar-header">
-            <span id="calendar-month-year"></span>
+            <select id="calendar-month" onchange="changeView()"></select>
+            <select id="calendar-year" onchange="changeView()"></select>
         </div>
         <div id="calendar-dates"></div>
     </div>
