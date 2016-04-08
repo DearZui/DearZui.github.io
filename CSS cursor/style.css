@@ -1,0 +1,19 @@
+body{
+    padding: 25px;
+}
+
+#draggable {
+    background: orange;
+    color: #ffffff;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    white-space: nowrap;
+    text-align: center;
+    cursor: move;
+}
+
+#draggable:hover {
+    background: #e69500;
+}
+
