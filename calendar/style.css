@@ -26,7 +26,16 @@
     height: 50px;
 }
 
+@media screen and (max-width: 650px){
+    table{
+        width: auto;
+    }
+}
+
 table{
     table-layout: fixed;
     width: 600px;
 }
+
+
+
