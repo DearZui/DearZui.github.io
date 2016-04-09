@@ -4,6 +4,8 @@
     background: #e85b92;
     background-image: linear-gradient(to right, transparent 50%, currentColor 0);
     color: #f2f3f4;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .pie::before {
