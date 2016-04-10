@@ -21,6 +21,11 @@ ul li {
     float: left;
     border-radius: 0.25em;
     background: #ffffff;
+    margin-bottom: 30px;
+}
+
+.items-gallery li:nth-child(5) {
+
 }
 
 .item-image {
@@ -67,6 +72,10 @@ ul li {
     background-color: #19a197;
 }
 
+.item-cal {
+    background-color: #f3b96c;
+}
+
 .item-info a {
     display: block;
     text-decoration: none;
@@ -86,7 +95,11 @@ ul li {
     color: #ffffff;
 }
 
-.item-pie,.item-grid i {
+.item-cal a em {
+    color: #ffffff;
+}
+
+.item-pie,.item-grid,.item-cal i {
     color: #ffffff;
 }
 
