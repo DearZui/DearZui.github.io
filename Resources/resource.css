@@ -79,6 +79,9 @@ ul li {
 .item-com{
     background-color: #c0a672;
 }
+.item-360{
+    background-color: #b7413d;
+}
 
 .item-info a {
     display: block;
@@ -106,8 +109,11 @@ ul li {
 .item-com a em {
     color: #ffffff;
 }
+.item-360 a em {
+    color: #ffffff;
+}
 
-.item-pie,.item-grid,.item-cal,.item-com i {
+.item-pie,.item-grid,.item-cal,.item-com, .item-360 i {
     color: #ffffff;
 }
 
