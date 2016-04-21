@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <style>
+        .siteHeader {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #56727c;
+        }
+
+        .siteHeader_section {
+            display: flex;
+            align-items: center;
+        }
+
+        .siteHeader_item {
+            padding: 5px 15px;
+            font-size: 12px;
+        }
+
+        .siteHeader_item + .siteHeader_item {
+            margin-left: 5px;
+        }
+
+        .siteHeader_item.is-site-header-item-selected {
+            color: #ffffff;
+            background-color: #415f69;
+            border-radius: 4px;
+        }
+
+        .siteHeaderLogo {
+            font-size: 20px;
+            line-height: 0;
+            color: #ffffff;
+        }
+
+        .siteHeaderButton {
+            cursor: pointer;
+            color: #d9e9ef;
+        }
+    </style>
+</head>
+<body>
+    <div class="siteHeader">
+        <div class="siteHeader_section">
+            <div class="siteHeader_item siteHeaderLogo">
+                <div class="fa fa-inbox"></div>
+            </div>
+            <div class="siteHeader_item siteHeaderButton is-site-header-item-selected">Inbox</div>
+            <div class="siteHeader_item siteHeaderButton">Sent</div>
+            <div class="siteHeader_item siteHeaderButton">Trash</div>
+        </div>
+        <div class="siteHeader_section">
+            <div class="siteHeader_section siteHeaderButton">Settings</div>
+        </div>
+    </div>
+</body>
+</html>
