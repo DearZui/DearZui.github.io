@@ -114,6 +114,17 @@ a:before{
     }
 }
 
+::selection
+{
+    color: #ffffff;
+    background-color: #4d4d4d;
+}
+::-moz-selection
+{
+    color: #ffffff;
+    background-color: #4d4d4d;
+}
+
 #wrapper:before{
     content: '';
     display: block;
