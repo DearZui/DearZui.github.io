@@ -83,7 +83,7 @@ ul li {
     background-color: #b7413d;
 }
 .item-menu{
-    background-color: #41345b;
+    background-color: #fede9a;
 }
 
 .item-info a {
@@ -115,11 +115,8 @@ ul li {
 .item-360 a em {
     color: #ffffff;
 }
-.item-menu a em {
-    color: #ffffff;
-}
 
-.item-pie,.item-grid,.item-cal,.item-com, .item-360, .item-menu i {
+.item-pie,.item-grid,.item-cal,.item-com, .item-360, i {
     color: #ffffff;
 }
 
