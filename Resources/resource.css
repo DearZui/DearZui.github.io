@@ -82,6 +82,9 @@ ul li {
 .item-360{
     background-color: #b7413d;
 }
+.item-menu{
+    background-color: #41345b;
+}
 
 .item-info a {
     display: block;
@@ -112,8 +115,11 @@ ul li {
 .item-360 a em {
     color: #ffffff;
 }
+.item-menu a em {
+    color: #ffffff;
+}
 
-.item-pie,.item-grid,.item-cal,.item-com, .item-360 i {
+.item-pie,.item-grid,.item-cal,.item-com, .item-360, .item-menu i {
     color: #ffffff;
 }
 
