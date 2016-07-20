@@ -64,6 +64,11 @@ ul li{
     line-height: 1.5em;
 }
 
+.items-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 ::selection
 {
     color: #ffffff;
